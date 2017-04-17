@@ -1,68 +1,44 @@
-function switchFunc(){
+function switchFunc()
+{
 	var clrOne=document.getElementById('clrboxone').style.backgroundColor;
-	//document.getElementById("clrboxone").style.backgroundColor='green';
-	//alert(clrOne.style.backgroundColor);
-	var clrTwo = document.getElementById("clrboxtwo").style.backgroundColor;
-
-	var clrTemp= clrTwo;
-
-//	alert(clrTemp);
-
-
-	//	alert(clrTwo.style.backgroundColor);
-	//alert(clrOne.style.backgroundColor);
-	//alert(clrTwo.style.backgroundColor);
-	//alert(clrTemp.style.backgroundColor);
-	//document.getElementById("clrboxone");
-	//alert(document.getElementById("clrboxone").style.backgroundColor);
-	//document.getElementById("clrboxtwo").style.backgroundColor=clrOne.style.backgroundColor;
-	//clrTwo.style.backgroundColor='blue';
-
-	document.getElementById("clrboxone").style.backgroundColor=clrTemp;
+	document.getElementById("clrboxone").style.backgroundColor=document.getElementById("clrboxtwo").style.backgroundColor;
 	document.getElementById("clrboxtwo").style.backgroundColor=clrOne;
-
-	//clrTwo.style.backgroundColor="red";
-	//document.getElementById("clrboxone").style.backgroundColor=clrTemp.style.backgroundColor;
-	//document.getElementById('switcher').style.fontsize="20px";
 }
 
-
 function colorFunc(){
-	//alert(document.getElementById("selcol"));
-	//alert(document.getElementById("selbox"));
+var x=document.getElementById("selcolor").options.selectedIndex;
+var y=document.getElementById("selbox").options.selectedIndex;
 
+switch(x){
+case 0:
+	colour="maroon";break;
+case 1:
+	colour="blue";break;
+case 2:
+	colour="green";break;
+case 3:
+	colour="yellow";break;
+case 4:
+	colour="pink";break;
+case 5:
+	colour="black";break;
+case 6:
+	colour="cyan";break;
+case 7:
+	colour="white";break;
 
-//	var colorSelect = document.getElementById("selcolor").options;
-//	alert(colorSelect.selectedIndex);
+}
 
-var clroption = document.getElementById("selcolor").options;
-var clrindex = document.getElementById("selcolor").selectedIndex;
+switch(y){
 
-var boxoption = document.getElementById("selbox").options;
-var boxindex = document.getElementById("selbox").selectedIndex;
-//alert(y);
-//alert("Color is "+ clroption[clrindex].text);
-//alert("ColourIndex is "+ clroption[clrindex].index);
-var colour = clroption[clrindex].text;
-var box= boxoption[boxindex].text;
-
+case 0:
+	box="Box 1";break;
+case 1:
+	box="Box 2";break;
+}
 
 if(box=="Box 1")
 	document.getElementById("clrboxone").style.backgroundColor=colour;
 else
 	document.getElementById("clrboxtwo").style.backgroundColor=colour;
-
-
-
-
-//document.getElementById(clrbox)
-
-
-
-
-//alert(y);
-//alert("Box is "+ boxoption[boxindex].text );
-//alert("Box Index is "+ boxoption[boxindex].index );
-
-
 }
