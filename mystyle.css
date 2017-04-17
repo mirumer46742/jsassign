@@ -1,0 +1,67 @@
+.maindiv{
+		margin-left: 60px;
+	}
+
+	form{
+		float: left;
+	}
+	.colour{
+		margin-right: 15px;
+	}
+	.box{
+		margin-right: 50px;
+	}
+	
+	.clrbox {
+		border:solid 2px white;
+		width: 100px;
+		height: 100px;
+		float: left;
+		border-radius: 10px;
+		transition: border 1s;
+	}
+
+	.clrbox:hover {
+		border:solid 2px black;
+		border-radius: 20px;
+		}
+
+/*
+	#clrboxone{background-color: pink}
+	
+	#clrboxtwo{background-color: lightblue}
+*/
+	#switcher{
+		float: left;
+		margin: 35px;
+	}
+	
+
+	.topheader,.bottomheader{
+		width: 500px;
+		height:200px;
+		margin: 5px 20px;
+		background-color: lightgrey;
+		border: solid 2px white;
+		border-radius: 10px;
+	}
+	.topheader{
+		
+		float: left;
+	}
+	.bottomheader{
+	float: left;
+	
+
+	}
+
+	.insheader{
+		margin: 45px;
+		margin-left: 50px;
+
+	}
+	.insbottom{
+		margin: 85px;
+		margin-left: 85px;
+
+	}

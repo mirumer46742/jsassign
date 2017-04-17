@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>JavaScript Task</title>
+	<link rel="stylesheet" href="mystyle.css">
+	<script type="text/javascript" src=myscript.js></script>
+
+</head>
+
+<body bgcolor ="grey">
+
+<div class="maindiv">
+<div class="topheader">
+<div class="insheader">
+<div class="clrbox" id="clrboxone" style="background-color: maroon"></div>
+
+<div class = "btnclass">
+	<input type="button" value="<-Switch Colour->" id ="switcher" onclick="switchFunc()"></button>
+</div>
+
+<div class="clrbox" id="clrboxtwo" style="background-color: green"></div>
+</div>
+</div>
+
+
+
+
+<div class="bottomheader">
+<div class="insbottom">
+
+
+<form>
+
+  <select name="colour" id="selcolor" class="colour">
+    <option value="maroon">Maroon</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+    <option value="pink">Pink</option>
+    <option value="black">Black</option>
+    <option value="cyan">Cyan</option>
+    <option value="white">White</option>
+  </select>
+
+
+  <select name="box" id="selbox" class="box" >
+    <option value="Box 1">Box 1</option>
+    <option value="Box 2">Box 2</option>
+  </select>
+</form>
+
+<button type="button" id="colorbtn" onclick="colorFunc()">Colour the Box</button>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
